@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aditya Kumar Singh - Cloud Computing & DevOps Professional. B.Tech CSE student specializing in AWS, Docker, Kubernetes, and CI/CD pipelines.">
+<meta name="keywords" content="Cloud Computing, DevOps, AWS, Docker, Kubernetes, Portfolio">
+<meta name="author" content="Aditya Kumar Singh">
+<title>Aditya Kumar Singh | Cloud & DevOps Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- GLTF Loader -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Devicon CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND VIDEO -->
+<video id="bg-video" autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<!-- THREE.JS CANVAS -->
+<canvas id="bg"></canvas>
+<div class="cursor"></div>
+
+<!-- NAVBAR -->
+<nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>           
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="content">
+
+<!-- HOME -->
+<section id="home" class="panel">
+   <div class="hero">
+
+    <!-- RIGHT CONTENT -->
+    <div class="hero-right">
+        <h1>
+            <span class="green">Hello, I'm</span> 
+            <span class="red">Aditya Kumar Singh</span>
+        </h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <!-- <p>
+            I craft interactive and responsive websites with 
+            <span class="highlight">HTML, CSS, JavaScript</span>.
+        </p> -->
+    </div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="panel">
+    <div class="about-content">
+        <img src="profile.png" alt="Aditya Kumar Singh - Cloud & DevOps Engineer" class="about-image">
+        <div class="about-text">
+            <h1>About Me 👨‍💻</h1>
+            <p>
+                Aspiring Cloud Engineer with a strong foundation in cloud computing, AWS, and CloudStack, along with knowledge of virtualization, networking, and cloud security. Experienced in developing web and software projects, demonstrating skills in backend development, API integration. Passionate about cloud infrastructure, DevOps, and automation, with a continuous focus on building scalable, reliable, and efficient solutions.
+            </p>
+
+            <div class="about-buttons">
+                <a href="#skills" class="btn">⚛ Skills</a>
+                <a href="#projects"  class="btn">🚀 View My Work</a>
+                <a href="Aks (1).pdf" id="download-resume" class="btn-outline">📄 Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="panel">
+    <h1>Skills ⚡</h1>
+    <div class="skills-layout">
+        <div class="skills-block">
+            <h2 class="skills-subtitle"><span class="skills-highlight skills-highlight--tech">Skills</span></h2>
+            <div class="skill-tags skill-tags-inline">
+                <span class="skill-tag">
+                    <i class="devicon-amazonwebservices-plain skill-icon skill-icon--aws"></i>
+                    <span>AWS</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-docker-plain skill-icon skill-icon--docker"></i>
+                    <span>Docker</span>
+                </span>
+                <!-- <span class="skill-tag">
+                    <i class="devicon-kubernetes-plain skill-icon skill-icon--kubernetes"></i>
+                    <span>Kubernetes</span>
+                </span> -->
+                <span class="skill-tag">
+                    <i class="devicon-github-original skill-icon skill-icon--cicd"></i>
+                    <span>CI/CD</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-java-plain skill-icon skill-icon--java"></i>
+                    <span>Java</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-cplusplus-plain skill-icon skill-icon--cpp"></i>
+                    <span>C++</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-python-plain skill-icon skill-icon--python"></i>
+                    <span>Python</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-javascript-plain skill-icon skill-icon--javascript"></i>
+                    <span>JavaScript</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-html5-plain skill-icon skill-icon--html"></i>
+                    <span>HTML/CSS</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-git-plain skill-icon skill-icon--git"></i>
+                    <span>Git</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-linux-plain skill-icon skill-icon--linux"></i>
+                    <span>Linux</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-github-original skill-icon skill-icon--github"></i>
+                    <span>GitHub</span>
+                </span>
+                <span class="skill-tag">
+                    <i class="devicon-vscode-plain skill-icon skill-icon--vscode"></i>
+                    <span>VS Code</span>
+                </span>
+            </div>
+        </div>
+        <div class="skills-block">
+            <h2 class="skills-subtitle"><span class="skills-highlight skills-highlight--soft">Soft Skills</span></h2>
+            <div class="skill-tags skill-tags-inline soft-skills-tags">
+                <span class="soft-skill-tag soft-skill-tag--1">Resilience</span>
+                <span class="soft-skill-tag soft-skill-tag--2">Teamwork</span>
+                <span class="soft-skill-tag soft-skill-tag--3">Problem solving</span>
+                <span class="soft-skill-tag soft-skill-tag--4">Time management</span>
+                <span class="soft-skill-tag soft-skill-tag--5">Adaptability</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="panel">
+    <h1>Projects 💻</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="chat.png" alt="Manny chatbot project" class="project-image">
+            <h3>Manny - A Home Maintenance Chatbot</h3>
+            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Flask, Gemini API</p>
+            <p>Developed a web-based AI chatbot using Python and Flask with AIML-based conversational logic, implementing Gemini APIs for real-time interaction and scalable backend architecture.</p>
+            <a href="https://github.com/aditya2developer/chatbot-HM" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+        </div>
+        <div class="project-card">
+            <img src="Screen.png" alt="Flappy Bird game project" class="project-image">
+            <h3>Flappy-Bird Game</h3>
+            <p class="tech-stack"><strong>Tech:</strong> JAVA</p>
+            <p>Developed a 2D Flappy Bird–style game using JAVA, implementing physics-based movement, collision detection, and responsive cross-platform gameplay mechanics.</p>
+            <a href="https://github.com/aditya2developer/FlappyBirdGame" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+        </div>
+        <div class="project-card">
+            <img src="sc.png" alt="SwachhSakhi project" class="project-image">
+            <h3>SwachhSakhi</h3>
+            <p class="tech-stack"><strong>Tech:</strong> HTML, CSS, JavaScript, Python</p>
+            <p>Developed a web-based platform promoting menstrual hygiene awareness and accessibility, enabling users to request sanitary products, interact with NGOs, and access educational resources through a responsive and user-friendly interface, built using HTML, CSS, JavaScript, and backend integration for efficient data management.</p>
+            <a href="https://github.com/aditya2developer/SwachhSakhi" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+        </div>
+        <!-- <div class="project-card">
+            <h3>Data Analytics Dashboard</h3>
+            <p class="tech-stack"><strong>Tech:</strong> Python, Pandas, PostgreSQL, Plotly</p>
+            <p>Real-time analytics platform with interactive data visualization and metrics for data-driven decision making.</p>
+            <a href="#" class="project-link" target="_blank">View Project →</a>
+        </div> -->
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="panel">
+    <h1>Certifications 📜</h1>
+    <div class="cert-container">
+        <div class="cert-item">
+            <!-- <div class="cert-icon">☁️</div> -->
+            <div class="cert-image-wrapper">
+                <img class="cert-image" id="cert-img-1" src="f.png" alt="AWS Cloud Practitioner Certificate">
+                <input type="file" accept="image/*" class="cert-upload-input" data-cert="1" onchange="handleCertUpload(event)">
+            </div>
+            <h3>Introduction to Internet of Things (NPTEL)</h3>
+            <p>Completed NPTEL course on Introduction to Internet of Things (IoT), covering IoT architecture, communication protocols, sensors, and real-world applications.</p>
+        </div>
+        <div class="cert-item">
+            <!-- <div class="cert-icon">🌐</div> -->
+            <div class="cert-image-wrapper">
+                <img class="cert-image" id="cert-img-2" src="c.png" alt="Google Cloud Fundamentals Certificate">
+                <input type="file" accept="image/*" class="cert-upload-input" data-cert="2" onchange="handleCertUpload(event)">
+            </div>
+            <h3>Oracle Certified Professional </h3>
+            <p>Generative AI Professioanl</p>
+        </div>
+        <div class="cert-item">
+            <!-- <div class="cert-icon">🐳</div> -->
+            <div class="cert-image-wrapper">
+                <img class="cert-image" id="cert-img-3" src="e.png" alt="Docker Mastery Certificate">
+                <input type="file" accept="image/*" class="cert-upload-input" data-cert="3" onchange="handleCertUpload(event)">
+            </div>
+            <h3>AWS Fundamentals</h3>
+            <p>AWS Cloud Practitioner Essentials</p>
+        </div>
+        <div class="cert-item">
+            <!-- <div class="cert-icon">☸️</div> -->
+            <div class="cert-image-wrapper">
+                <img class="cert-image" id="cert-img-4" src="d.png" alt="Kubernetes Essentials Certificate">
+                <input type="file" accept="image/*" class="cert-upload-input" data-cert="4" onchange="handleCertUpload(event)">
+            </div>
+            <h3>AWS Academy Graduate</h3>
+            <p>AWS Academy Cloud Foundation</p>
+        </div>
+        <div class="cert-item">
+            <!-- <div class="cert-icon">🐧</div> -->
+            <div class="cert-image-wrapper">
+                <img class="cert-image" id="cert-img-5" src="a.png" alt="Linux System Administration Certificate">
+                <input type="file" accept="image/*" class="cert-upload-input" data-cert="5" onchange="handleCertUpload(event)">
+            </div>
+            <h3>The Bits and Bytes of Computer Networking</h3>
+            <p>An online non-credit course authorized by Google and offered through Coursera</p>
+        </div>
+        <div class="cert-item">
+            <!-- <div class="cert-icon">🏗️</div> -->
+            <div class="cert-image-wrapper">
+                <img class="cert-image" id="cert-img-6" src="b.png" alt="AWS Solutions Architect Certificate">
+                <input type="file" accept="image/*" class="cert-upload-input" data-cert="6" onchange="handleCertUpload(event)">
+            </div>
+            <h3>AWS Simulearn</h3>
+            <p>Cloud First Steps</p>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="panel">
+    <h1>Achievements 🏆</h1>
+    <div class="achievements-container">
+        <div class="achievement-item">
+            <div class="achievement-number">700+</div>
+            <div class="achievement-text">LeetCode Problems Solved</div>
+            <p>Strong problem-solving and algorithmic thinking skills</p>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-number">4+</div>
+            <div class="achievement-text">Hackathons</div>
+            <p>Active participant in coding competitions</p>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-number">2+</div>
+            <div class="achievement-text">Cloud Certifications</div>
+            <p>Pursuing industry-recognized credentials</p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="panel">
+    <h1>Education 🎓</h1>
+    <p class="education-intro">Academic background and qualifications.</p>
+    <div class="education-timeline">
+        <article class="education-card">
+            <div class="education-card__rail" aria-hidden="true"></div>
+            <div class="education-card__inner">
+                <header class="education-card__header">
+                    <span class="education-card__level">Matriculation</span>
+                    <span class="education-card__period">2019 - 2020</span>
+                </header>
+                <h3 class="education-card__degree">Secondary School (Class X)</h3>
+                <p class="education-card__school">Madhuban Central School</p>
+                <p class="education-card__location">Madhuban, Bihar</p>
+                <dl class="education-card__facts">
+                    <div class="education-card__fact">
+                        <dt>Result</dt>
+                        <dd>82.8%</dd>
+                    </div>
+                </dl>
+            </div>
+        </article>
+        <article class="education-card">
+            <div class="education-card__rail" aria-hidden="true"></div>
+            <div class="education-card__inner">
+                <header class="education-card__header">
+                    <span class="education-card__level">Intermediate</span>
+                    <span class="education-card__period">2020 - 2022</span>
+                </header>
+                <h3 class="education-card__degree">Senior Secondary (Class XII)</h3>
+                <p class="education-card__school">Madhuban Central School</p>
+                <p class="education-card__location">Madhuban, Bihar</p>
+                <dl class="education-card__facts">
+                    <div class="education-card__fact">
+                        <dt>Result</dt>
+                        <dd>80%</dd>
+                    </div>
+                </dl>
+            </div>
+        </article>
+        <article class="education-card education-card--featured">
+            <div class="education-card__rail" aria-hidden="true"></div>
+            <div class="education-card__inner">
+                <header class="education-card__header">
+                    <span class="education-card__level">Undergraduate</span>
+                    <span class="education-card__period">2023 - 2027</span>
+                </header>
+                <h3 class="education-card__degree">B.Tech in Computer Science &amp; Engineering</h3>
+                <!-- <p class="education-card__specialization">Specialization — Cloud Computing</p> -->
+                <p class="education-card__school">Lovely Professional University</p>
+                <p class="education-card__location">Jalandhar, Punjab</p>
+                <dl class="education-card__facts">
+                    <div class="education-card__fact">
+                        <dt>CGPA</dt>
+                        <dd>7.4</dd>
+                    </div>
+                </dl>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- CONTACT — public email is CONTACT_EMAIL in script.js (mailto links updated on load) -->
+<section id="contact" class="panel">
+    <h1>Contact 📩</h1>
+    <!-- <p class="contact-intro">Send a message below, or email me at <a class="contact-mailto" href="mailto:adityakumarsingh83401@gmail.com">adityakumarsingh83401@gmail.com</a>.</p> -->
+    <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" required autocomplete="name" maxlength="120" class="form-input" placeholder="Your name">
+        </div>
+        <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" required autocomplete="email" maxlength="254" class="form-input" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required rows="5" maxlength="4000" class="form-input form-textarea" placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit" class="btn form-submit" id="contact-submit">Send message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="contact-links">
+        <p><a id="contact-email-link" class="contact-mailto" href="mailto:adityakumarsingh83401@gmail.com">Email: adityakumarsingh83401@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/aditya2developer" target="_blank" rel="noopener noreferrer">github.com/aditya2developer</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/aditya8409" target="_blank" rel="noopener noreferrer">linkedin.com/in/aditya8409</a></p>
+    </div>
+    <p class="copyright">&copy; 2026 Aditya Kumar Singh. All rights reserved.</p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
